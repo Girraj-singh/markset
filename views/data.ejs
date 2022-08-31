@@ -1,0 +1,44 @@
+<html>
+<center>
+    <form action="/employee/get_data">
+        <table border="1" cellspecing="5" width="40%  ">
+            <caption>
+                <font size="8" color="green">Employee Data Sheet</font>
+            </caption>
+            <tr>
+                <td>Name</td>
+                <td>Designation</td>
+                <td>Salary</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="ep_name"></td>
+                <td>
+                    <select name="DD">
+                        <option>Select</option>
+                        <option>Manager</option>
+                        <option>Supervisor</option>
+                    </select>
+                </td>
+                <td><input type="text" name="salary"></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit">
+    </form>
+</center>
+    
+<center>
+    <%if(status){%>
+    <table border="1" width="50%" height="25%">
+        <tr><th>Name:</th><td><%=emp_name%></td></tr>
+        <tr><th>Designation:</th><td><%=profasion%></td></tr>
+        <tr><th>Salary:</th><td>Rs.<%= salary%></td></tr>
+        <tr><th>DA:<%=DA%>%</th><th>HRA:<%=HRA%>%</th></tr>
+        <tr><th colspan="2" bgcolor="#5DADE2">Net Amount: <font color="green">Rs.<%=net_salary%></font></th></tr>
+
+    </table>
+
+    <%}%>
+</center>
+
+</html>

@@ -1,0 +1,127 @@
+<html>
+
+<body background="/images/bg2.webp" width="50%" background="fixed">
+    <!-- <img src="bg2.webp" width="100%"> -->
+</body>
+
+<center>
+
+    <h1>
+        <font color="#04970B" size="13"><b>YOUR RESULT</b></font>
+    </h1>
+</center>
+<br><br><br><br>
+<center>
+    <table border='1' bgcolor='#0DD1E8' width='80%' cellpadding='0'>
+        <tr>
+            <td align='center'><img src='/images/cbse logo.png' width='11%'></td>
+            <td align="left">
+                <font color="red">
+                    <h1>Central Board of Secondary Education </h1>
+                </font>
+            </td>
+        </tr>
+    </table>
+
+
+    <table border='0' width='80%' bgcolor='white'>
+        <tr>
+            <td>Student Name :<%= sname%>
+            </td>
+        </tr>
+        <tr>
+            <td>Father Name :<%= fname%>
+            </td>
+        </tr>
+        <tr>
+            <td>Roll No. :<%= roll%>
+            </td>
+        </tr>
+        <tr>
+            <td>School Name :<%= School%>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <%= sname%>
+                    <%= gen%> Shrei. <%= fname%>
+            </td>
+        </tr>
+    </table>
+
+    <table border='1' cellpadding='10' width='80%' bgcolor='white'>
+        <tr bgcolor='#65AFF8'>
+            <th>Sub. Code</th>
+            <th>Subject</th>
+            <th>Min. Marks</th>
+            <th>Max. Marks</th>
+            <th>Obtained</th>
+            <th>Remark</th>
+        </tr>
+        <!-- <%for( i = 0;i<5;i++){%>
+            <tr ><th>${subcode[i]}</th><th>${sub[i]}</th><th>33</th><th>100</th><th>${num[i]}</th><th>${remark}</th></tr>
+            <%}%> -->
+        <tr>
+            <th>101</th>
+            <th>Hindi</th>
+            <th>33</th>
+            <th>100</th>
+            <th>
+                <%=hmarks%>
+            </th>
+            <th><%if(hmarks < 30){%><font color="red" size="5">*</font><%}%></th>
+        </tr>
+        <tr>
+            <th>102</th>
+            <th>English</th>
+            <th>33</th>
+            <th>100</th>
+            <th>
+                <%=emarks%>
+            </th>
+            <th><%if(emarks < 30){%><font color="red" size="5">*</font><%}%></th>
+        </tr>
+        <tr>
+            <th>103</th>
+            <th>Physics</th>
+            <th>33</th>
+            <th>100</th>
+            <th>
+                <%=cmarks%>
+            </th>
+            <th><%if(pmarks < 30){%><font color="red" size="5">*</font><%}%></th>
+        </tr>
+        <tr>
+            <th>104</th>
+            <th>Chemistry</th>
+            <th>33</th>
+            <th>100</th>
+            <th>
+                <%=cmarks%>
+            </th>
+            <th><%if(cmarks < 30){%><font color="red" size="5">*</font><%}%></th>
+        </tr>
+        <tr>
+            <th>105</th>
+            <th>Math</th>
+            <th>33</th>
+            <th>100</th>
+            <th>
+                <%=mmarks%>
+            </th>
+            <th><%if(mmarks < 30){%><font color="red" size="5">*</font><%}%></th>
+        </tr>
+        <tr bgcolor='#65AFF8'>
+            <th>Total marks: <%=Total%></th>
+            <th>Percentage: <%=per%> %</th>
+            <th>Division:<%=dive%></th>
+            <th>Result: <%=result1%></th>
+        </tr>
+    </table>
+
+
+</center>
+
+
+
+</html>

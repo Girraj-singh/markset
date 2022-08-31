@@ -1,0 +1,108 @@
+<html>
+
+<body background="/images/bg2.webp" width="50%" background="fixed">
+    <!-- <img src="bg2.webp" width="100%"> -->
+</body>
+<style> 
+    input
+    {
+      width: 10%;
+      padding: 12px 12px;
+      margin: 5px 1;
+      box-sizing: border-box;
+      border-radius: 20px;
+      
+    }
+</style>
+
+
+<form action="/school/get_marksheet">
+<center>
+    
+    <h1>
+        <font color="#04970B" size="13"><b>ENTER STUDENT DATA</b></font>
+    </h1>
+</center>
+<br><br><br>
+<center>
+    <span>
+        <font color="white" size="6">Student Name :</font>
+    </span>
+    <input type="text" required name="sname" placeholder="Student name" pattern="[A-Z a-z]+">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span>
+        <font color="white" size="6">Father Name :</font>
+    </span>
+    <input type="text" required name="fname" placeholder="Father name" pattern="[A-Z a-z]+">
+    <br><br><br>
+    <span style="padding-left: 2cm;"></span>
+    <span>
+        <font color="white" size="6">Roll No. :</font>
+    </span>
+    <input type="text" required name="roll" placeholder="Enter Roll no." pattern="[0-9]+">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span>
+        <font color="white" size="6">School Name :</font>
+    </span>
+    <input type="text" required name="School" placeholder="Enter School name" pattern="[A-Z a-z]+">
+    <br><br><br>
+
+
+    <span>
+        <font color="white" size="6">Gender :</font>
+    </span>
+    <input type="radio" value="male" name="gender">
+    <font color="white" size="4">Male </font>
+    <input type="radio" value="female" name="gender">
+    <font color="white" size="4">Female </font>
+
+
+    
+    <br><br>
+    <hr color="white" width="50%">
+    <br>
+    <span>
+        <font color="white" size="5"><b><u>Enter Subject Marks</u></b></font>
+    </span>
+    <br><br>
+    <span>
+        <font color="white" size="6">English Marks :</font>
+    </span>
+    <input type="text" required name="emarks" placeholder="Enter English marks" >
+    <span style="padding-left: 2.7cm;"></span>
+    <span>
+        <font color="white" size="6">Hindi Marks:</font>
+    </span>
+    <input type="text" required name="hmarks" placeholder="Enter Hindi Marks">
+    <br><br><br>
+    <span>
+        <font color="white" size="6">Physics Marks :</font>
+    </span>
+    <input type="text" required name="pmarks" placeholder="Enter Physics marks" >
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span>
+        <font color="white" size="6">Chemistry Marks:</font>
+    </span>
+    <input type="text" required name="cmarks" placeholder="Enter Chemistry Marks" >
+    <br><br><br>
+    <span>
+        <font color="white" size="6">Math Marks:</font>
+    </span>
+    <input type="text" required name="mmarks" placeholder="Enter Math Marks" >
+    <span style="padding: 200px;"></span>
+    <br><br>
+    <input type="submit"></form>
+
+
+    <br><br><br>
+    <hr color="white" width="90%">
+    <br><br><br>
+
+    
+
+
+</center>
+
+
+
+</html>
